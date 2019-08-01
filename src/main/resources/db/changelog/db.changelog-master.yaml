@@ -18,3 +18,23 @@ databaseChangeLog:
                   type: varchar(255)
                   constraints:
                     nullable: false
+	- createTable:
+            tableName: user
+            columns:
+              - column:
+                  name: idUser
+                  type: long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: userName
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+	      - column:
+                  name: passoword
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
